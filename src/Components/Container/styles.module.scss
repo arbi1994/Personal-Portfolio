@@ -1,0 +1,20 @@
+@use '../../sass/abstracts' as *;
+
+.container {
+  width: 100%;
+  min-height: 200vh;
+  position: relative;
+  // overflow: hidden;
+
+  @include media("<=SMdesktop"){
+    min-height: 100em;
+  }
+
+  @include media("<=tablet"){
+    min-height: 80em;
+  }
+
+  @include media("<=phoneM"){
+    min-height: 60em;
+  }
+}
